@@ -1,3 +1,5 @@
 Para criar esse CRUD, foi utilizado o WAMP SERVER.
 
 É necessário configurar o banco de dados conforme as informações em banco.php
+
+O arquivo de criação das tabelas é o banco.sql
