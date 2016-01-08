@@ -1,0 +1,592 @@
+< !DOCTYPE html>
+    < html>
+        < head>
+            < meta http - equiv="X-UA-Compatible" content="IE=Edge" />
+            < meta charset="utf-8" />
+            < script type="text/javascript">
+                window.NREUM || (NREUM = {}); NREUM.info = { "beacon": "bam.nr-data.net",
+                "errorBeacon": "bam.nr-data.net", "licenseKey": "00935e5c27", "applicationID":
+                "7446600", "transactionName": "egkLTEdXWg9XQUwKC1QDSlFbXFMb", "queueTime":
+                505, "applicationTime": 2135, "agent": "js-agent.newrelic.com/nr-768.min.js"
+                }
+                < /script>
+                    <script type="text/javascript">
+                    window.NREUM || (NREUM = {}), __nr_require = function(e, n, t) {
+    function r(t) {
+        if (!n[t]) {
+            var o = n[t] = {
+                exports: {}
+            };
+            e[t][0].call(o.exports, function(n) {
+                var o = e[t][1][n];
+                return r(o || n)
+            }, o, o.exports)
+        }
+        return n[t].exports
+    }
+    if ("
+function " == typeof __nr_require) return __nr_require;
+    for (var o = 0; o < t.length; o++) r(t[o]);
+    return r
+}({
+    QJf3ax: [function(e, n) {
+        function t(e) {
+            function n(n, t, a) {
+                e && e(n, t, a), a || (a = {});
+                for (var u = c(n), f = u.length, s = i(a, o, r), p = 0; f > p; p++) u[p].apply(s, t);
+                return s
+            }
+            function a(e, n) {
+                f[e] = c(e).concat(n)
+            }
+            function c(e) {
+                return f[e] || []
+            }
+            function u() {
+                return t(n)
+            }
+            var f = {};
+            return {
+                on: a,
+                emit: n,
+                create: u,
+                listeners: c,
+                _events: f
+            }
+        }
+        function r() {
+            return {}
+        }
+        var o = "
+nr@context ",
+            i = e("
+gos ");
+        n.exports = t()
+    }, {
+        gos: "
+7eSDFh "
+    }],
+    ee: [function(e, n) {
+        n.exports = e("
+QJf3ax ")
+    }, {}],
+    3: [function(e, n) {
+        function t(e) {
+            return function() {
+                r(e, [(new Date).getTime()].concat(i(arguments)))
+            }
+        }
+        var r = e("
+handle "),
+            o = e(1),
+            i = e(2);
+        "
+undefined " == typeof window.newrelic && (newrelic = window.NREUM);
+        var a = ["
+setPageViewName ", "
+addPageAction ", "
+setCustomAttribute ", "
+finished ", "
+addToTrace ", "
+inlineHit ", "
+noticeError "];
+        o(a, function(e, n) {
+            window.NREUM[n] = t("
+api - " + n)
+        }), n.exports = window.NREUM
+    }, {
+        1: 12,
+        2: 13,
+        handle: "
+D5DuLP "
+    }],
+    gos: [function(e, n) {
+        n.exports = e("
+7eSDFh ")
+    }, {}],
+    "
+7eSDFh ": [function(e, n) {
+        function t(e, n, t) {
+            if (r.call(e, n)) return e[n];
+            var o = t();
+            if (Object.defineProperty && Object.keys) try {
+                return Object.defineProperty(e, n, {
+                    value: o,
+                    writable: !0,
+                    enumerable: !1
+                }), o
+            } catch (i) {}
+            return e[n] = o, o
+        }
+        var r = Object.prototype.hasOwnProperty;
+        n.exports = t
+    }, {}],
+    D5DuLP: [function(e, n) {
+        function t(e, n, t) {
+            return r.listeners(e).length ? r.emit(e, n, t) : void(r.q && (r.q[e] || (r.q[e] = []), r.q[e].push(n)))
+        }
+        var r = e("
+ee ").create();
+        n.exports = t, t.ee = r, r.q = {}
+    }, {
+        ee: "
+QJf3ax "
+    }],
+    handle: [function(e, n) {
+        n.exports = e("
+D5DuLP ")
+    }, {}],
+    XL7HBI: [function(e, n) {
+        function t(e) {
+            var n = typeof e;
+            return !e || "
+object " !== n && "
+function " !== n ? -1 : e === window ? 0 : i(e, o, function() {
+                return r++
+            })
+        }
+        var r = 1,
+            o = "
+nr@id ",
+            i = e("
+gos ");
+        n.exports = t
+    }, {
+        gos: "
+7eSDFh "
+    }],
+    id: [function(e, n) {
+        n.exports = e("
+XL7HBI ")
+    }, {}],
+    G9z0Bl: [function(e, n) {
+        function t() {
+            var e = d.info = NREUM.info,
+                n = f.getElementsByTagName("
+script ")[0];
+            if (e && e.licenseKey && e.applicationID && n) {
+                c(p, function(n, t) {
+                    n in e || (e[n] = t)
+                });
+                var t = "
+https " === s.split(": ")[0] || e.sslForHttp;
+                d.proto = t ? "
+https: //" : "http://", a("mark", ["onload", i()]);
+                var r = f.createElement("script");
+                r.src = d.proto + e.agent, n.parentNode.insertBefore(r, n)
+            }
+        }
+        function r() {
+            "complete" === f.readyState && o()
+        }
+        function o() {
+            a("mark", ["domContent", i()])
+        }
+        function i() {
+            return (new Date).getTime()
+        }
+        var a = e("handle"),
+            c = e(1),
+            u = window,
+            f = u.document;
+        e(2);
+        var s = ("" + location).split("?")[0],
+            p = {
+                beacon: "bam.nr-data.net",
+                errorBeacon: "bam.nr-data.net",
+                agent: "js-agent.newrelic.com/nr-768.min.js"
+            },
+            d = n.exports = {
+                offset: i(),
+                origin: s,
+                features: {}
+            };
+        f.addEventListener ? (f.addEventListener("DOMContentLoaded", o, !1), u.addEventListener("load", t, !1)) : (f.attachEvent("onreadystatechange", r), u.attachEvent("onload", t)), a("mark", ["firstbyte", i()])
+    }, {
+        1: 12,
+        2: 3,
+        handle: "D5DuLP"
+    }],
+    loader: [function(e, n) {
+        n.exports = e("G9z0Bl")
+    }, {}],
+    12: [function(e, n) {
+        function t(e, n) {
+            var t = [],
+                o = "",
+                i = 0;
+            for (o in e) r.call(e, o) && (t[i] = n(o, e[o]), i += 1);
+            return t
+        }
+        var r = Object.prototype.hasOwnProperty;
+        n.exports = t
+    }, {}],
+    13: [function(e, n) {
+        function t(e, n, t) {
+            n || (n = 0), "undefined" == typeof t && (t = e ? e.length : 0);
+            for (var r = -1, o = t - n || 0, i = Array(0 > o ? 0 : o); ++r < o;) i[r] = e[n + r];
+            return i
+        }
+        n.exports = t
+    }, {}]
+}, {}, ["G9z0Bl"]);
+                    </script>
+                    <link rel="icon" href="http://a.quatrorodas.abrilm.com.br/assets/favicon-f2ed92b6f9166811d1d5898a14bb16bc.ico"
+                    sizes="64x64">
+                    <meta name="viewport" content="width=1320, user-scalable=no">
+                    <meta name="google-site-verification" content="FDO2jJDRWw6F661H1ZZcQyl8GBTGB-DN0LeMYjNie7Q">
+                    <title>
+                        QuatroRodas | QuatroRodas
+                    </title>
+                    <meta content="QUATRO RODAS" name="marca" />
+                    <meta content="QuatroRodas" name="title" />
+                    <meta content="a.quatrorodas.abrilm.com.br" name="assets_host" />
+                    <!-- Twitter Card data -->
+                    <meta content="QuatroRodas | QuatroRodas" name="twitter:title" />
+                    <meta content="http://quatrorodas.abril.com.br/" name="twitter:url" />
+                    <!-- Open Graph data -->
+                    <meta content="QuatroRodas | QuatroRodas" property="og:title" />
+                    <meta content="http://quatrorodas.abril.com.br/" property="og:url" />
+                    <!-- g+ -->
+                    <meta content="QuatroRodas | QuatroRodas" itemprop="name" />
+                    <!-- Google Authorship and Publisher Markup -->
+                    <link href="http://quatrorodas.abril.com.br/" rel="canonical" />
+                    <meta content="QuatroRodas" property="og:site_name" />
+                    <meta content="@quatrorodas" name="twitter:site" />
+                    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700'
+                    rel='stylesheet' type='text/css'>
+                    <link href="http://a.quatrorodas.abrilm.com.br/assets/application-ebf28fd79a2f5e78500baa7fb56c9347.css"
+                    media="all" rel="stylesheet" />
+                    </head>
+                    
+                    <body id="" class="home ">
+                        <div class="row" id="abrilBar">
+                        </div>
+                        <div class="TopAd container">
+                            <div id="abrAD_leaderboard1">
+                            </div>
+                        </div>
+                        <div class="container">
+                            <header id="header-quatrorodas">
+                                <h1 class="logo">
+                                    <a href="/" title="Quatro Rodas" onclick="_gaq.push(['OLD._trackEvent','header-logo','click-menu', 'logo'])"><img src="http://a.quatrorodas.abrilm.com.br/assets/logo-header-desktop-9c166cbd384e48dfdbff06c5283a61b2.png" alt="Logo Quatro Rodas"></a>
+                                </h1>
+                                <ul class="redes-sociais">
+                                    <li>
+                                        <a class="fa fa-facebook" href="https://www.facebook.com/quatrorodas"
+                                        target="_blank" onclick="_gaq.push(['OLD._trackEvent','header-redes-sociais','click-menu', 'facebook'])"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-instagram" href="https://instagram.com/quatro_rodas" target="_blank"
+                                        onclick="_gaq.push(['OLD._trackEvent','header-redes-sociais','click-menu', 'instagram'])"></a>
+                                    </li>
+                                    <li>
+                                        <a class="fa fa-twitter" href="https://twitter.com/quatrorodas" target="_blank"
+                                        onclick="_gaq.push(['OLD._trackEvent','header-redes-sociais','click-menu', 'twitter'])"></a>
+                                    </li>
+                                    <li>
+                                        <a class="icon-logo-abril-single" href="http://www.abril.com.br/" target="_blank"
+                                        onclick="_gaq.push(['OLD._trackEvent','header-redes-sociais','click-menu', 'abril'])"></a>
+                                    </li>
+                                </ul>
+                                <!-- NAV -->
+                                <nav class="menu-principal">
+                                    <ul>
+                                        <li class="menu-carros">
+                                            <a href="/carros">Carros</a>
+                                            <nav data-info="carros" class="submenu menu-imagens">
+                                                <ul class="lista">
+                                                    <li class="modelos">
+                                                        <a href="/carros/fabricantes-modelos">Modelos de A a Z</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="carros modelos-az">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="/carros/chevrolet-onix">Chevrolet Onix</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/chevrolet-cobalt">Chevrolet Cobalt</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/citroen-c3">Citröen C3</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/fiat-palio">Fiat Palio</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/fiat-toro">Fiat Toro</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/ford-ecosport">Ford EcoSport</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/ford-new-fiesta">Ford New Fiesta</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/honda-civic">Honda Civic</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/honda-fit">Honda Fit</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/hyundai-hb20">Hyundai HB20</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/hyundai-ix35">Hyundai ix35</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/jeep-renegade">Jeep Renegade</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/nissan-march">Nissan March</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/peugeot-208">Peugeot 208</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/renault-duster-oroch">Renault Duster Oroch</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/renault-sandero">Renault Sandero</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/toyota-corolla">Toyota Corolla</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/toyota-hillux">Toyota Hilux</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/volkswagen-gol">Volkswagen Gol</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="/carros/volkswagen-jetta">Volkswagen Jetta</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </nav>
+                                        </li>
+                                        <li class="menu-testes">
+                                            <a href="/testes">Testes</a>
+                                            <nav data-info="testes" class="submenu menu-imagens">
+                                                <ul class="lista">
+                                                    <li class="is_active">
+                                                        <a data-editoria="Testes" href="/testes">Ver tudo de testes</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/testes/comparativos">Comparativos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/testes/impressoes">Impressões</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/testes/longa-duracao">Longa duração</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/testes/teste-de-pista">Teste de Pista</a>
+                                                    </li>
+                                                </ul>
+                                                <div id="widget-Testes" data-ubbermaterias="true" data-transformacao="tb_202x117"
+                                                data-limite_itens="10" data-por_pagina="10" data-options='{"marca": "QUATRO RODAS", "editorias": "Testes", "fonte": ""}'>
+                                                </div>
+                                            </nav>
+                                        </li>
+                                        <li class="menu-noticias">
+                                            <a href="/noticias">Notícias</a>
+                                            <nav data-info="noticias" class="submenu menu-imagens">
+                                                <ul class="lista">
+                                                    <li class="is_active">
+                                                        <a data-editoria="Notícias" href="/noticias">Ver tudo de notícias</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noticias/classicos">Clássicos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noticias/">Curiosidades</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noticias/lancamentos">Lançamentos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noticias/mercado">Mercado</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/noticias/segredo">Segredo</a>
+                                                    </li>
+                                                </ul>
+                                                <div id="widget-Notícias" data-ubbermaterias="true" data-transformacao="tb_202x117"
+                                                data-limite_itens="10" data-por_pagina="10" data-options='{"marca": "QUATRO RODAS", "editorias": "Notícias", "fonte": ""}'>
+                                                </div>
+                                            </nav>
+                                        </li>
+                                        <li class="menu-auto-servico">
+                                            <a href="/auto-servico">Auto-serviço</a>
+                                            <nav data-info="auto-servico" class="submenu menu-imagens">
+                                                <ul class="lista">
+                                                    <li class="is_active">
+                                                        <a data-editoria="Auto-serviço" href="/auto-servico">Ver tudo de auto-serviço</a>
+                                                        </i>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/auto-servico/auto-defesa">Auto-defesa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/auto-servico/correio-tecnico">Correio técnico</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/auto-servico/produtos-para-carro">Produtos para carro</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/auto-servico/servicos">Serviços</a>
+                                                    </li>
+                                                </ul>
+                                                <div id="widget-Auto-serviço" data-ubbermaterias="true" data-transformacao="tb_202x117"
+                                                data-limite_itens="10" data-por_pagina="10" data-options='{"marca": "QUATRO RODAS", "editorias": "Auto serviço", "fonte": ""}'>
+                                                </div>
+                                            </nav>
+                                        </li>
+                                        <li class="menu-guia-compras">
+                                            <a href="/guia-de-compras">Guia de compras</a>
+                                            <nav data-info="guia-de-compra" class="submenu menu-imagens">
+                                                <ul class="lista">
+                                                    <li class="is_active">
+                                                        <a data-editoria="Guia" href="/guia-de-compras">Ver tudo de guia de compras</a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-rotulo="Melhor compra carros" href="/guia-de-compras/melhor-compra-carros">Melhor compra carros</a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-rotulo="Melhor compra motos" href="/guia-de-compras/melhor-compra-motos">Melhor compra motos</a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-rotulo="Melhor compra utilitários" href="/guia-de-compras/melhor-compra-utilitarios">Melhor compra utilitários</a>
+                                                    </li>
+                                                    <li>
+                                                        <a data-rotulo="50 mais vendidos" href="/top-50/2015">50 mais vendidos</a>
+                                                    </li>
+                                                    <!-- <li><a data-rotulo="Guia do final de semana" href="/guia-de-compras/guia-do-final-de-semana">Guia do final de semana</a></li> -->
+                                                </ul>
+                                                <div id="widget-Guia" data-ubbermaterias="true" data-transformacao="tb_202x117"
+                                                data-limite_itens="5" data-por_pagina="5" data-options='{"marca": "QUATRO RODAS", "editorias": "Guia de compras", "fonte": ""}'>
+                                                </div>
+                                            </nav>
+                                        </li>
+                                        <li class="menu-tabela-fipe">
+                                            <a href="/tabela-fipe/">Tabela Fipe</a>
+                                        </li>
+                                        <li class="menu-assine">
+                                            <a href="http://www.assine.abril.com.br/assinar/revista-quatro-rodas?origem=sr_qr_menu&utm_source=editoriais&utm_medium=sites_editoriais&utm_campaign=sr_qr_menu"
+                                            target="_blank">Assine</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <!-- / NAV -->
+                                <form action="/busca" method="get">
+                                    <label for="Pesquisar">
+                                        <input type="text" placeholder="Pesquisar" name="qu">
+                                        <i class="fa fa-search">
+                                        </i>
+                                    </label>
+                                    <input type="submit" class="fa fa-search" value="">
+                                </form>
+                                <nav class="mais-acessados">
+                                    <ul>
+                                        <li>
+                                            <a href="/noticias/segredo">Segredos: novo Cruze, novas picapes e facelift do Gol</a>
+                                        </li>
+                                        <li>
+                                            <a href="/materia/toyota-hilux-srx-x-chevrolet-s10-high-country">Comparativo: Hilux x S10</a>
+                                        </li>
+                                        <li>
+                                            <a href="/materia/designer-releitura-vw-brasilia">Designer faz releitura da VW Brasilia</a>
+                                        </li>
+                                        <li>
+                                            <a href="/acervodigital/">Acervo digital</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="assine">
+                                    <a href="/u/capa/link"><img src="/u/capa/imagem/ubber_capa_revista_topo" alt="Assine"></a>
+                                    <a href="http://www.assine.abril.com.br/assinar/revista-quatro-rodas?origem=sr_qr_botaocapa&utm_source=editoriais&utm_medium=sites_editoriais&utm_campaign=sr_qr_botaocapa"
+                                    onclick="_gaq.push(['OLD._trackEvent','header-assine','click-menu', 'assine'])"
+                                    target="_blank">ASSINE</a>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="container" id="ubber-content">
+                            <div class="col-xs-16">
+                                <div data-area="" class="row ubber-home">
+                                    <section>
+                                        <ul class="destaques_principais">
+                                            <li>
+                                                <a href="/materia/vocacao-estradeira"><figure class="figure-gradient"><img src="http://msalx.quatrorodas.abril.com.br/2015/12/09/1336/ye9qD/s10.jpeg?1449690213" alt="Vocação estradeira" /></figure><h4>Vocação estradeira</h4></a>
+                                            </li>
+                                            <li>
+                                                <a href="/materia/vocacao-estradeira"><figure class="figure-gradient"><img src="http://msalx.quatrorodas.abril.com.br/2015/12/09/1336/yiLzF/s10.jpeg?1449690213" alt="Vocação estradeira" /></figure><h4>Vocação estradeira</h4></a>
+                                            </li>
+                                            <li class="publicidade-home">
+                                                <div id="abrAD_rectangle1">
+                                                </div>
+                                                <p>
+                                                    PUBLICIDADE
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <a href="/materia/governo-frota-15anos"><h3 class="tag_top"> Mercado</h3><figure class="figure-gradient"><img src="http://msalx.quatrorodas.abril.com.br/2016/01/06/1711/yiLzF/credito-itamar-aguiar_palacio-piratini.jpeg?1452107574" alt="Governo quer tirar das ruas carros com mais de 15 anos" /></figure><h4>Governo quer tirar das ruas carros com mais de 15 anos</h4></a>
+                                            </li>
+                                            <li>
+                                                <a href="/materia/casa-brinquedos-ayrton-senna-920542"><figure class="figure-gradient"><img src="http://msalx.quatrorodas.abril.com.br/2015/11/27/1942/yiLzF/senna1.jpeg?1448660566" alt="A casa dos brinquedos de Ayrton Senna" /></figure><h4>A casa dos brinquedos de Ayrton Senna</h4></a>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <ul class="destaques_secundarios">
+                                        <li>
+                                            <a href="/materia/teste-de-conteudo"><h3 class="tag_top">Teste de conteudo</h3><figure class="figure-gradient"><img  src="http://msalx.quatrorodas.abril.com.br/2015/11/06/2121/z3KiQ/638_tig_05.jpeg?1448385776" title="Teste de inserção de chamadas manuais" alt="Teste de inserção de chamadas manuais"></figure><h4>Teste de inserção de chamadas manuais</h4><p></p></a>
+                                            <!-- trazer conteudo relacionado -->
+                                        </li>
+                                        <li>
+                                            <a href="/materia/casa-brinquedos-ayrton-senna-920542"><figure class="figure-gradient"><img  src="http://msalx.quatrorodas.abril.com.br/2015/11/27/1942/z3KiQ/senna1.jpeg?1448660566" title="A casa dos brinquedos de Ayrton Senna" alt="A casa dos brinquedos de Ayrton Senna"></figure><h4>A casa dos brinquedos de Ayrton Senna</h4><p>*matéria originalmente publicada em agosto de 2010 Ayrton Senna teve a rara...</p></a>
+                                            <!-- trazer conteudo relacionado -->
+                                        </li>
+                                        <li>
+                                            <a href="/materia/chevrolet-mostra-novo-cruze-hatch"><h3 class="tag_top">Lançamentos</h3><figure class="figure-gradient"><img  src="http://msalx.quatrorodas.abril.com.br/2016/01/07/1050/z3KiQ/chevrolet-cruze-hatch-2.jpeg?1452171092" title="Chevrolet mostra o novo Cruze hatch" alt="Chevrolet mostra o novo Cruze hatch"></figure><h4>Chevrolet mostra o novo Cruze hatch</h4><p>Principal estrela da Chevrolet para o Salão de Detroit, que abre as portas na próxima...</p></a>
+                                            <!-- trazer conteudo relacionado -->
+                                        </li>
+                                        <li>
+                                            <a href="#"><h3 class="tag_top">Teste de chamadas</h3><figure class="figure-gradient"><img  src="http://msalx.quatrorodas.abril.com.br/2015/11/10/1139/z3KiQ/663-passat-01.jpeg?1448386543" title="Ibama multa Volkswagen em R$ 50 milhões por fraude em Amarok diesel no Brasil" alt="Ibama multa Volkswagen em R$ 50 milhões por fraude em Amarok diesel no Brasil"></figure><h4>Ibama multa Volkswagen em R$ 50 milhões por fraude em...</h4><p>Fabricante também terá que apresentar plano de recall para substituir detectores de...</p></a>
+                                            <!-- trazer conteudo relacionado -->
+                                        </li>
+                                    </ul>
+                                    <div class="publicidade superbanner">
+                                        <div id="abrAD_leaderboard2">
+                                        </div>
+                                    </div>
+                                
+                            <script type="text/javascript">
+                            (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=618416771589538";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk')); < /script></footer > < div id = "abrAD_dhtml" > < /div><script src="http:/ / w.abrilm.com.br / widget.chamadas.js ">
+                            </script>
+                            <script src="
+http: //w.abrilm.com.br/widget.materias.js">
+                            </script>
+                            <script src="http://w.abrilm.com.br/widget.materias.js">
+                            </script>
+                            <script src="http://a.quatrorodas.abrilm.com.br/assets/application-3c9d33808160a29a410cdde240e84ba2.js">
+                            </script>
+                            <script type="text/javascript">
+                            var abrConfSite = {
+    abrAdMap: '/libc/ads/ads_quatrorodas.json',
+    abrAdsArea: 'quatrorodas/home'
+} < /script><script src="/libc / metrics / site / cm_quatrorodas.js ">
+                            </script>
+                            <script src=" / libc / ads / abrad.min.js ">
+                            </script>
+                    </body>
+                    
+                    </html>
