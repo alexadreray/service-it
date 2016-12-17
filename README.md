@@ -1,7 +1,6 @@
 # service-it
-Descrição do Teste para Desenvolvedor PHP e Wordpress da Service IT <br>
+Sistema de controle de estoque usando PHP e MySQL (CRUD) + Layout responsivo usando HTML5, CSS3, Javascript e Bootstrap <br>
 Desenvolvedor: Alexandre Ray da Silva <br>
-E-mail: alexandrerays@gmail.com <br>
 Data: 07/01/2016
 
 -------------------------------------------------------------------------------------------------------------------
