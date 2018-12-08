@@ -1,6 +1,6 @@
 # service-it
 Sistema de controle de estoque usando PHP e MySQL (CRUD) + Layout responsivo usando HTML5, CSS3, Javascript e Bootstrap <br>
-Desenvolvedor: Alexandre Ray da Silva <br>
+Desenvolvedor: @alexandrerays <br>
 Data: 07/01/2016
 
 -------------------------------------------------------------------------------------------------------------------
